@@ -1,0 +1,45 @@
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+**/secrets.yaml
+**/secret.yaml
+mosquitto/config/password_file
+
+# Home Assistant runtime state
+homeassistant/config/.storage/
+homeassistant/config/.cloud/
+homeassistant/config/.HA_VERSION
+homeassistant/config/.ha_run.lock
+homeassistant/config/home-assistant.log*
+homeassistant/config/home-assistant_v2.db*
+homeassistant/config/deps/
+homeassistant/config/tts/
+
+# Zigbee2MQTT runtime state and network identity
+zigbee2mqtt/data/configuration.yaml
+zigbee2mqtt/data/coordinator_backup.json
+zigbee2mqtt/data/database.db
+zigbee2mqtt/data/state.json
+zigbee2mqtt/data/log/
+
+# Mosquitto runtime state
+mosquitto/data/
+mosquitto/log/
+
+# Backups and generated data
+*.db
+*.db-*
+*.log
+*.log.*
+*.tar
+*.tar.gz
+*.zip
+*.backup
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*~

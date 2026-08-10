@@ -1,0 +1,8 @@
+# Public baseline only. Integration credentials and runtime state belong in
+# Home Assistant's ignored local storage, never in this repository.
+
+default_config:
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
